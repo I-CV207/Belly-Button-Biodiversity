@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="#barsection">Bar Chart</a>
+      <a class="navbar-brand" href="#bubblesection">Bubble Chart</a>
+    </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+      <!-- More information about the project -->
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>From Bacteria to Beef </h3>
+            </div>
+            <div class="col-md-9">
+                <!-- Next we add a paragraph  -->
+                <p>
+                    The human body is source of many types of bacteria, different parts of the body harbour different species. The species within an individual may vary from another. The hypothesis is that the ideal bacteria species to make synthetic beef may be found in the belly button. Data has been colected from multiple individuals about the bateria species that live on their belly buttons in order to share it alongside the participants and research team. They will be able to identify the bacteria species that live on their navels through the selection of their ID.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <!-- A <div> belonging to the well class contains a dropdown menu with an id of selDataset -->
+            <!-- The attribute onchange is asociated with the optionChanged()functoin -->
+            <!-- When a change takes place in the dropdown menu, the optionChanged () function is called -->
+            <!-- The argument for the optionCHanged() funtion is this.value -->
+            <!-- "this" refers to the dropdown mnenu. this.value therefore returns to the value attribute of the current dropdown menu selection.-->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <!-- A <div> with an id of sample-metadata is the information panel -->
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <a name="barsection"></a>
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a name="bubblesection"></a>
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>

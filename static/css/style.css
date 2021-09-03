@@ -1,0 +1,36 @@
+body {
+
+    color: #145DA0;
+    background-color:#EEEDE7 ;
+    font-family:{ 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+  }
+  .jumbotron {
+    color: #EBF5F7;
+    font-family:sans-serif;
+    background-image: url("../images/bacteria.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
+  .navbar{
+    background-color: #5BB0BA;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    color:honeydew;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  .navbar a:hover {
+    background-color: #004369;
+    color: #E5DDC8;
+  }
+  .container-fluid{
+    color:whitesmoke;
+    background-color: #5885AF;
+
+  }
